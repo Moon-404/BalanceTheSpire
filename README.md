@@ -6,6 +6,10 @@
 
 创意工坊：https://steamcommunity.com/sharedfiles/filedetails/?id=3116737691
 
+## 事件改动
+
+1. 吸血鬼→移除所有打击，获得等量噬咬（最大生命或小血瓶需求不变）
+
 ## 战士改动
 
 ### 增强
