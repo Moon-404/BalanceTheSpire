@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpireReturn;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardTags;
 import com.megacrit.cardcrawl.cards.colorless.Bite;
@@ -14,10 +15,10 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 @SpirePatch(clz = Vampires.class, method = "replaceAttacks")
 public class VampiresReplace {
-    public static void Replace(Vampires __instance, List<String> ___bites) {
+    public static SpireReturn<Void> Prefix(Vampires __instance, List<String> ___bites) {
         ArrayList<AbstractCard> masterDeck = AbstractDungeon.player.masterDeck.group;
         int count = 0;
-        for (int i = 0; i < masterDeck.size(); i++) {
+        for (int i = masterDeck.size() - 1; i >= 0; i--) {
             AbstractCard card = (AbstractCard)masterDeck.get(i);
             if (card.tags.contains(CardTags.STARTER_STRIKE)) {
                 AbstractDungeon.player.masterDeck.removeCard(card);
@@ -29,5 +30,6 @@ public class VampiresReplace {
             AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(c, (float)Settings.WIDTH / 2.0F, (float)Settings.HEIGHT / 2.0F));
             ___bites.add(c.cardID);
         }
+        return SpireReturn.Return();
     }
 }
