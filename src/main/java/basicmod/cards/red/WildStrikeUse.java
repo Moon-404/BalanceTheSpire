@@ -13,8 +13,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 @SpirePatch(clz = WildStrike.class, method = "use")
 public class WildStrikeUse {
-    public static void Replace(WildStrike instance, AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, instance.damage, instance.damageTypeForTurn), AttackEffect.SLASH_HEAVY));
+    public static void Replace(WildStrike __instance, AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, __instance.damage, __instance.damageTypeForTurn), AttackEffect.SLASH_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Wound()));
     }
 }

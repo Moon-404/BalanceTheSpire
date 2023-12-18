@@ -10,10 +10,10 @@ import com.megacrit.cardcrawl.powers.JuggernautPower;
 
 @SpirePatch(clz = JuggernautPower.class, method = "onGainedBlock")
 public class JuggernautTrigger {
-    public static void Replace(JuggernautPower instance, float blockAmount) {
+    public static void Replace(JuggernautPower __instance, float blockAmount) {
         if (blockAmount > 0.0F) {
-            instance.flash();
-            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction((AbstractPlayer)instance.owner, instance.amount, DamageType.THORNS, AttackEffect.SLASH_HORIZONTAL));
+            __instance.flash();
+            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction((AbstractPlayer)__instance.owner, __instance.amount, DamageType.THORNS, AttackEffect.SLASH_HORIZONTAL));
         }
     }
 }
