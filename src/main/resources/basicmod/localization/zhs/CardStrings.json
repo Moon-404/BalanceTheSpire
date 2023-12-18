@@ -1,0 +1,32 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "Berserk": {
+    "NAME": "狂暴",
+    "DESCRIPTION": "保留 。 NL 获得 !M! 层 易伤 。 NL 在每回合开始时获得 [R] 。"
+  },
+  "Seeing Red": {
+    "NAME": "盛怒",
+    "DESCRIPTION": "获得 [R] [R] [R] 。 NL 消耗 。 NL 将一张 *灼伤 放入你的弃牌堆中。"
+  },
+  "Thunderclap": {
+    "NAME": "闪电霹雳",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 易伤 。"
+  },
+  "Wild Strike": {
+    "NAME": "狂野打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 增加一张 *伤口 到你的手牌。"
+  },
+  "Juggernaut": {
+    "NAME": "势不可当",
+    "DESCRIPTION": "每当你获得 格挡 时， NL 对所有敌人造成 NL !M! 点伤害。"
+  }
+}
