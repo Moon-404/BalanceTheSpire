@@ -5,5 +5,12 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "HandDrill": {
+    "NAME": "手钻",
+    "FLAVOR": "“螺旋超危险的啊。”",
+    "DESCRIPTIONS": [
+      "每当你突破敌人的 #y格挡 时，给予其 #b5 层 #y易伤 。"
+    ]
   }
 }
