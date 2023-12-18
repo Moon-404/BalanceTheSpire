@@ -1,36 +1,30 @@
-# Basic Mod
+# Balance The Spire
 
-This is an empty Slay the Spire mod + a modding tutorial.
+一个杀戮尖塔的平衡模组。
 
-This tutorial will help with setup and the basics of Slay the Spire modding, but it will not teach you Java. If you know nothing of Java or programming in general, you are strongly recommended to look up a free online course and do at least some of it. It is possible to do modding with almost no proper knowledge, but it will make things much more difficult.
+灵感来源于：https://tieba.baidu.com/p/8799619832
 
----
+创意工坊：https://steamcommunity.com/sharedfiles/filedetails/?id=3116737691
 
-## Check the wiki to get started:
+## 战士改动
 
-https://github.com/Alchyr/BasicMod/wiki
+### 增强
 
----
+1. 狂暴→添加 保留，原机制不变
+2. 盛怒→1/0费 消耗，获得3费，在你的弃牌堆中放入一张灼伤
+3. 交锋→改为造成16/21伤害
+4. 完美打击→2费造成8点伤害，你每有一张名字带有打击的牌，本牌增加2/3点伤害
+5. 狂野打击→1费造成12/16点伤害，将一张伤口放入手牌
+6. 重刃→2费造成14/16点伤害，力量发挥4/6倍效果
+7. 金刚臂→2费造成13/16点伤害，给予2/3层虚弱
+8. 闪电霹雳→1费群体打5/6，给予1/2层易伤
+9. 哨位→1费获得7/10点格挡，被消耗时获得2/3费
+10. 灼热攻击→2费造成14点伤害，可以无限升级（后面每次升级都只比调整前高2点伤害）
+11. 势不可挡：1费 金卡，每当你获得格挡时，对所有敌人造成2/3点伤害
 
-## Know what you're doing?
+### 削弱
 
-You can still use this mod as a base, or you could use another template like https://github.com/DarkVexon/ProTemplate
-
-You can find more options in the pins of the #modding-technical channel in the Slay the Spire discord server.
-
----
-
-### Some HD Slay the Spire art assets (courtesy of Gremious, creator of DefaultMod):
-
-Includes:
-- Empty Relic Template feat. empty bottle
-- Empty Card Template
-- Color-Changable cardback
-- A couple of HD Monster vectors (Louse, Nob, Sentry, Sneaky Gremlin)
-- A coupe of HD items (J.A.X., A Coin)
-- 2 people silhouettes
-- A curse Background
-
-https://github.com/Gremious/StS-DefaultModBase#some-hd-slay-the-spire-art-assets
-
----
+12. 全身撞击→由白卡改为蓝卡
+13. 燔祭→伤害下调，对所有敌人造成20/26点伤害
+14. 重振精神→每消耗一张牌获得4/6点格挡
+15. 狂宴→伤害下调，造成7/9点伤害（旨在提高吃人难度，更多对局不得不放弃吃人）
