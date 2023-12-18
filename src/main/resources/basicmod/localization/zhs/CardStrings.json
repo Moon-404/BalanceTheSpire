@@ -15,7 +15,7 @@
   },
   "Seeing Red": {
     "NAME": "盛怒",
-    "DESCRIPTION": "获得 [R] [R] [R] 。 NL 消耗 。 NL 将一张 *灼伤 放入你的弃牌堆中。"
+    "DESCRIPTION": "获得 [R] [R] [R] 。 NL 将一张 *灼伤 放入你的弃牌堆中。 NL 消耗 。"
   },
   "Thunderclap": {
     "NAME": "闪电霹雳",
