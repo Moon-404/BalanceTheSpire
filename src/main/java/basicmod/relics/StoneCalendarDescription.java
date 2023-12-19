@@ -6,6 +6,6 @@ import com.megacrit.cardcrawl.relics.StoneCalendar;
 @SpirePatch(clz = StoneCalendar.class, method = "getUpdatedDescription")
 public class StoneCalendarDescription {
     public static String Replace(StoneCalendar __instance) {
-        return __instance.DESCRIPTIONS[0] + 12 + __instance.DESCRIPTIONS[1] + 30 + __instance.DESCRIPTIONS[2];
+        return "每 #b12 回合结束时，对所有敌人造成 #b30 点伤害。（跨战斗保留）";
     }
 }
