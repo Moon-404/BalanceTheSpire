@@ -28,5 +28,9 @@
   "Juggernaut": {
     "NAME": "势不可当",
     "DESCRIPTION": "每当你获得 格挡 时， NL 对所有敌人造成 NL !M! 点伤害。"
+  },
+  "Riddle With Holes": {
+    "NAME": "千穿百刺",
+    "DESCRIPTION": "造成 !D! 点伤害7次。"
   }
 }
