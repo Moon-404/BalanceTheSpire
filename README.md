@@ -4,7 +4,7 @@
 
 灵感来源于：https://tieba.baidu.com/p/8799619832
 
-创意工坊：https://steamcommunity.com/sharedfiles/filedetails/?id=3116737691
+创意工坊：https://steamcommunity.com/sharedfiles/filedetails/?id=3117574017
 
 ## 事件改动
 
