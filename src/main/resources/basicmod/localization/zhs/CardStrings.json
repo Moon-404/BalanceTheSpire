@@ -32,5 +32,9 @@
   "Riddle With Holes": {
     "NAME": "千穿百刺",
     "DESCRIPTION": "造成 !D! 点伤害7次。"
+  },
+  "Dodge and Roll": {
+    "NAME": "闪躲翻滚",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在下一回合获得 !B! 点 格挡 。 NL 敏捷 发挥 !M! 倍效果。"
   }
 }
