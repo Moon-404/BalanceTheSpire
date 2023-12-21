@@ -8,7 +8,7 @@ public class DodgeAndRollUpgrade {
     public static void Prefix(DodgeAndRoll __instance) {
         if (!__instance.upgraded) {
             __instance.baseBlock -= 1;
-            __instance.baseMagicNumber += 1;
+            __instance.baseMagicNumber += 50;
             __instance.magicNumber = __instance.baseMagicNumber;
             __instance.upgradedMagicNumber = true;
         }

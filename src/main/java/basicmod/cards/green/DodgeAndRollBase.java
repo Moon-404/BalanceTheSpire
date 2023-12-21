@@ -8,8 +8,7 @@ import com.megacrit.cardcrawl.cards.green.DodgeAndRoll;
 public class DodgeAndRollBase {
     public static void Postfix(DodgeAndRoll __instance) {
         __instance.rarity = CardRarity.UNCOMMON;
-        __instance.baseBlock -= 1;
-        __instance.baseMagicNumber = 2;
-        __instance.magicNumber = 2;
+        __instance.baseMagicNumber = 150;
+        __instance.magicNumber = __instance.baseMagicNumber;
     }
 }
