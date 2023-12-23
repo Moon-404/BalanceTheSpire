@@ -7,6 +7,9 @@ import com.megacrit.cardcrawl.relics.StoneCalendar;
 public class StoneCalendarTurnStart {
     public static void Replace(StoneCalendar __instance) {
         __instance.counter++;
+        if (__instance.counter > 12) {
+            __instance.counter -= 12;
+        }
         if (__instance.counter == 12) {
             __instance.beginLongPulse();
         }

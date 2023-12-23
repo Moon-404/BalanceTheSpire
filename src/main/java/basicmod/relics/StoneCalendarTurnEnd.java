@@ -18,7 +18,7 @@ public class StoneCalendarTurnEnd {
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, __instance));
             AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction((AbstractCreature)null, DamageInfo.createDamageMatrix(30, true), DamageType.THORNS, AttackEffect.BLUNT_HEAVY));
             __instance.stopPulse();
-            __instance.grayscale = true;
+            __instance.counter = 0;
         }
     }
 }
