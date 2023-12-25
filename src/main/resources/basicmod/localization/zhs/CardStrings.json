@@ -53,5 +53,10 @@
     "NAME": "潦草急就",
     "DESCRIPTION": "抽5张牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": ""
+  },
+  "Outmaneuver": {
+    "NAME": "抢占先机",
+    "DESCRIPTION": "下一回合 NL 获得 [G] [G] [G] 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "下一回合 NL 获得 [G] [G] [G] 。 NL 消耗 。"
   }
 }
