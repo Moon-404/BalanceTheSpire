@@ -7,11 +7,12 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.helpers.EventHelper;
+import com.megacrit.cardcrawl.random.Random;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import javassist.CtBehavior;
 
-@SpirePatch(clz = EventHelper.class, method = "roll")
+@SpirePatch(clz = EventHelper.class, method = "roll", paramtypez = {Random.class})
 public class TinyChestEffect {
     private static class Locator extends SpireInsertLocator {
         @Override

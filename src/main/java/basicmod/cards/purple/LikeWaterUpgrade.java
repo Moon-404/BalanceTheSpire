@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.cards.purple.LikeWater;
 
 @SpirePatch(clz = LikeWater.class, method = "upgrade")
 public class LikeWaterUpgrade {
-    public static void Postfix(LikeWater __instance) {
+    public static void Prefix(LikeWater __instance) {
         if (!__instance.upgraded) {
             __instance.baseMagicNumber -= 1;
             __instance.magicNumber -= 1;
