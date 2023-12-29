@@ -13,7 +13,7 @@ public class WatcherStartingDeck {
         retVal.add("Strike_P");
         retVal.add("Strike_P");
         retVal.add("Strike_P");
-        retVal.add("Strike_P");
+        retVal.add("Defend_P");
         retVal.add("Defend_P");
         retVal.add("Defend_P");
         retVal.add("Defend_P");

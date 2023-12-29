@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.cards.tempCards.Expunger;
 public class ExpungerUpgrade {
     public static void Prefix(Expunger __instance) {
         if (!__instance.upgraded) {
-            __instance.baseDamage -= 1;
+            __instance.baseDamage -= 2;
         }
     }
 }
