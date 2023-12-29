@@ -62,5 +62,10 @@
   "LikeWater": {
     "NAME": "如水",
     "DESCRIPTION": "在你的回合开始时，如果你处于 平静 ，抽 !M! 张牌。"
+  },
+  "Beta": {
+    "NAME": "贝塔",
+    "DESCRIPTION": "将一张 *欧米伽 放入你的抽牌堆中。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一张 *欧米伽 放入你的抽牌堆中。 NL 预见 2。 NL 消耗 。"
   }
 }
