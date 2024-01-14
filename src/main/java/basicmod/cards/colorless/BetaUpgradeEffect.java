@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 @SpirePatch(clz = Beta.class, method = "use")
-public class BetaUpgrade {
+public class BetaUpgradeEffect {
     public static void Postfix(Beta __instance, AbstractPlayer p, AbstractMonster m) {
         if (__instance.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new ScryAction(2));

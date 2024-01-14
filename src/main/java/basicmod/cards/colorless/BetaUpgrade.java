@@ -1,17 +1,17 @@
 package basicmod.cards.colorless;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.tempCards.Beta;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.localization.CardStrings;
 
-@SpirePatch(clz = Beta.class, method = "use")
+import basemod.ReflectionHacks;
+
+@SpirePatch(clz = Beta.class, method = "upgrade")
 public class BetaUpgrade {
-    public static void Postfix(Beta __instance, AbstractPlayer p, AbstractMonster m) {
-        if (__instance.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ScryAction(2));
+    public static void Prefix(Beta __instance) {
+        if (!__instance.upgraded) {
+            __instance.rawDescription = ((CardStrings)ReflectionHacks.getPrivateStatic(Beta.class, "cardStrings")).UPGRADE_DESCRIPTION;
+            __instance.initializeDescription();
         }
     }
 }
